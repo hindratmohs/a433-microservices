@@ -3,11 +3,15 @@ version: "3.7"
 services:
 
   item-app:
-    image: item-app:v1
+    image: zero4335/item-app:v1
     ports:
       - 80:8080
 
     working_dir: /app
+
+    depends_on:
+      item-db:
+        condition: service_completed_successfully
 
     # volumes:
     #   - app-db:/data/db
