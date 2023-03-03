@@ -11,7 +11,7 @@ services:
 
     depends_on:
       item-db:
-        condition: service_completed_successfully
+        condition: service_started
 
     # volumes:
     #   - app-db:/data/db
