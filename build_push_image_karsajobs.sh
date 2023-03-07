@@ -8,3 +8,4 @@ echo $PASSWORD_DOCKER_HUB | docker login -u zero4335 --password-stdin
 
 # Perintah untuk push image ke Docker Hub
 docker push zero4335/karsajobs:latest
+
