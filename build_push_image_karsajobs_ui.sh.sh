@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Perintah untuk build Docker image dari berkas Dockerfile yang disediakan dengan nama <username-docker>/karsajobs:lates
-docker build -t zero4335/karsajobs-ui:latest
+docker build -t zero4335/karsajobs-ui:latest .
 
 # Perintah untuk login ke Docker Hub
 echo $PASSWORD_DOCKER_HUB | docker login -u zero4335 --password-stdin
